@@ -1,0 +1,19 @@
+.btn-base {
+  transform: 0.5s;
+  user-select: none;
+  -webkit-user-select:none;
+  
+  &:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: 0.5;
+  }
+}
+
+
