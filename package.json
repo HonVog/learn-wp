@@ -3,10 +3,9 @@
   "version": "1.2.2",
   "description": "",
   "main": "index.js",
-  "deploy": "gh-pages -d build",
   "homepage": "https://github.com/HonVog/learn-wp",
   "scripts": {
-    "predeploy": "npm run build-prod",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "webpack serve",
     "build-dev": "webpack",
