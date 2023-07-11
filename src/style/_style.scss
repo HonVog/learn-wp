@@ -284,7 +284,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
+        width: $size-win-fool-width;
         height: 100vh;
         background: rgba(253, 253, 253, 0.8);
         z-index: 500;
@@ -729,7 +729,7 @@ body {
     };
 
   .h-blok{
-    width: 100%;
+    width: $fool-size;
     height: auto !important;
     &-s{
       display: grid;
@@ -738,22 +738,20 @@ body {
 
       &_hed {
         &-media {
-          width: 100%;
+          min-width: $fool-size;
           grid-area: s-media;
-          display: flex;
-          flex-wrap: nowrap;
-          justify-content: space-between;
           align-items: center;
-          min-width: 100vw;
+          min-width: $size-win-fool-width;
           min-height: 88px;
           background-color: $background-a-blok;
+          display: grid;
+          grid-template-columns: auto auto;
 
           &--base-btn {
             padding: 24px;
             display: flex;
-            flex-wrap: nowrap;
             justify-content: flex-start;
-            align-items: stretch;
+            align-items: center;
 
             &--burger {
               margin-right: 20px;
@@ -929,7 +927,7 @@ body {
         }
 
         &--body {
-          width: calc(100vw - 38px) !important;
+          width: calc($size-win-fool-width - 38px) !important;
           height: 300px !important;
           background-color: $background-base;
         }
